@@ -11,7 +11,7 @@ VNET_NAME="example-$ENVIRONMENT-cluster-$LOCATION_SHORT_NAME-vnet"
 VNET_ID="/subscriptions/$SUBSCRIPTION_ID/resourceGroups/$RESOURCE_GROUP_NAME_CLUSTER/providers/Microsoft.Network/virtualNetworks/$VNET_NAME"
 
 PRIVATE_DNS_DOMAIN_NAME=example-$ENVIRONMENT.elkjop.com
-VNET_CIDR=10.142.80.0/2
+VNET_CIDR=10.142.80.0/20
 
 #!/bin/bash
 az account set -s $SUBSCRIPTION_ID
